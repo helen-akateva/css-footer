@@ -71,11 +71,39 @@ input {
   font-family: inherit;
 }
 
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
 .footer-container {
-  padding: 24px 16px;
   width: 320px;
-  height: 601px;
+  height: 100%;
+  padding: 24px 16px;
   background-color: #b58869;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-container {
+    padding: 24px 32px;
+    width: 768px;
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer-container {
+    padding: 24px 64px;
+    width: 1440px;
+    height: 100%;
+  }
 }
 
 .footer-card {
@@ -91,8 +119,46 @@ input {
   background-color: #c29d84;
 }
 
+@media only screen and (min-width: 768px) {
+  .footer-card {
+    width: 702px;
+    height: 156px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 32px;
+    column-gap: 40px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer-card {
+    width: 1312px;
+    height: 100px;
+    flex-wrap: nowrap;
+  justify-content: space-between;
+  }
+}
+
+
+
 .footer-logo {
   margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-logo {
+    margin-bottom: 0;
+    width: 84px;
+      height: 36px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+    .footer-logo {
+        width: 64px;
+        margin-left: 10px;
+      }
 }
 
 .icon-footer {
@@ -103,26 +169,52 @@ input {
   gap: 12px;
 }
 
+@media only screen and (min-width: 768px) {
+  .icon-footer {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: minwidthpx) {
+   {
+    
+  }
+}
+
 .footer-icon {
   margin-bottom: 32px;
 }
 
-.footer-list {
-    display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 32px;
+@media only screen and (min-width: 768px) {
+  .footer-icon {
+    margin-bottom: 0;
+    width: 24px;
+    height: 24px;
+  }
 }
+
+.footer-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-list {
+    flex-direction: row;
+  }
+}
+
 
 .footer-item {
-    font-size: 16px;
+  font-size: 16px;
 }
 
-
-
 .text-credits {
-    font-size: 14px;
-    margin-top: 32px;
-    text-align: center;
+  font-size: 14px;
+  margin-top: 32px;
+  text-align: center;
 }

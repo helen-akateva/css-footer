@@ -173,7 +173,7 @@ input {
   }
 }
 
-.icon-footer {
+.footer-socials {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -183,7 +183,7 @@ input {
 }
 
 @media only screen and (min-width: 768px) {
-  .icon-footer {
+  .footer-socials {
     align-items: center;
     justify-content: center;
     margin-bottom: 0;
@@ -191,7 +191,7 @@ input {
 }
 
 @media only screen and (min-width: 1440px) {
-  .icon-footer {
+  .footer-socials {
     margin-left: 40px;
   }
 }

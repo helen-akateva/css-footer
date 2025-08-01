@@ -63,12 +63,22 @@ img {
   height: auto;
 }
 
-*, ::after ::before {
+*,
+::after,
+::before {
   box-sizing: border-box;
 }
 
 input {
   font-family: inherit;
+}
+
+@media only screen and (min-width: 375px) {
+  .container {
+    max-width: 100%;
+    padding-left: clamp(16px, 4vw, 32px);
+    padding-right: clamp(16px, 4vw, 32px);
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -223,4 +233,9 @@ input {
   font-size: 14px;
   margin-top: 32px;
   text-align: center;
+}
+
+a:focus-visible {
+  outline: 2px solid #0b0803;
+  outline-offset: 2px;
 }

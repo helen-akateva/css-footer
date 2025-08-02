@@ -16,8 +16,8 @@ body {
 }
 
 .container {
-  max-width: 100%;
-  min-width: 320px;
+  width: 100%;
+ 
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
@@ -77,8 +77,6 @@ input {
 @media only screen and (min-width: 375px) {
   .container {
     max-width: 375px;
-    padding-left: clamp(16px, 4vw, 32px);
-    padding-right: clamp(16px, 4vw, 32px);
   }
 }
 
@@ -99,27 +97,12 @@ input {
 }
 .footer {
   padding-top: 24px;
-    padding-bottom: 24px;
-    background-color: #b58869;
-
+  padding-bottom: 24px;
+  background-color: #b58869;
 }
- .footer-container {
- 
- 
+.footer-container {
   margin: 0 auto;
 }
-
-/* @media only screen and (min-width: 768px) {
-  .footer-container {
-    max-width: 768px;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .footer-container {
-    max-width: 1440px;
-  }
-}  */
 
 .footer-card {
   display: flex;
@@ -128,9 +111,7 @@ input {
   border: 1px solid rgba(11, 8, 3, 0.15);
   border-radius: 40px;
   padding: 32px 48px;
-  max-width: 100%;
-   width: 100%;
-  
+  width: 100%;
   background-color: #c29d84;
   margin: 0 auto;
 }
@@ -138,7 +119,7 @@ input {
 @media only screen and (min-width: 768px) {
   .footer-card {
     max-width: 702px;
-   
+
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -150,7 +131,7 @@ input {
 @media only screen and (min-width: 1440px) {
   .footer-card {
     max-width: 1312px;
-   
+
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
